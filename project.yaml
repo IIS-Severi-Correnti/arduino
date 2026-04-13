@@ -1,0 +1,13 @@
+titolo: "Arduino Repository Base"
+classe: "non specificata"
+anno_scolastico: "2025-2026"
+livello: "base"
+argomenti:
+  - "seriale"
+  - "sensori"
+  - "attuatori"
+durata_ore: 2
+valutazione:
+  - "Comprensione del circuito e cablaggio"
+  - "Correttezza del codice e uso delle librerie"
+  - "Capacità di test e debug"
