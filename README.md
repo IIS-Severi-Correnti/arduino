@@ -13,7 +13,7 @@ Ogni progetto deve vivere in una cartella dedicata, con una struttura prevedibil
 ```text
 arduino/
 ├── README.md
-└── progetti/
+└── projects/
     ├── nome-progetto-01/
     │   ├── README.md
     │   ├── sketch/
@@ -27,12 +27,12 @@ arduino/
         └── ...
 ```
 
-> Nota: se la cartella `progetti/` non esiste ancora, creala prima di aggiungere il primo progetto.
+> Nota: se la cartella `projects/` non esiste ancora, creala prima di aggiungere il primo progetto.
 
 ## 3. Come aggiungere un nuovo progetto
 Passi concreti consigliati:
 
-1. Crea la cartella progetto in `progetti/` usando un nome breve e descrittivo (kebab-case).
+1. Crea la cartella progetto in `projects/` usando un nome breve e descrittivo (kebab-case).
 2. Crea le sottocartelle minime: `sketch/`, `schema/`, `componenti/`.
 3. Inserisci lo sketch Arduino in `sketch/` con nome coerente al progetto.
 4. Aggiungi lo schema elettrico in `schema/` (immagine/PDF) e una nota testuale dei collegamenti.
@@ -54,7 +54,7 @@ Per mantenere coerenza nel tempo:
 ## 5. Requisiti minimi per ogni progetto
 Ogni progetto deve includere almeno:
 
-1. **README locale** (`progetti/<nome-progetto>/README.md`) con:
+1. **README locale** (`projects/<nome-progetto>/README.md`) con:
    - scopo del progetto,
    - componenti principali,
    - istruzioni di compilazione/upload,
@@ -66,7 +66,7 @@ Ogni progetto deve includere almeno:
 Esempio reale di percorso che gli studenti possono replicare senza ambiguità:
 
 ```text
-progetti/semaforo-pedonale/
+projects/semaforo-pedonale/
 ├── README.md
 ├── sketch/
 │   └── semaforo-pedonale.ino
@@ -82,3 +82,17 @@ Checklist veloce:
 - README locale presente;
 - schema presente;
 - lista componenti presente.
+
+
+## 6. Template riusabile per nuovi progetti
+Per iniziare rapidamente usa `templates/project-template/` e copialo nella cartella del progetto:
+
+```text
+templates/project-template/
+├── README.md
+├── src/
+│   └── main.ino
+├── BOM.md
+└── REPORT.md
+```
+
